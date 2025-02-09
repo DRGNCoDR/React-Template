@@ -1,15 +1,17 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "To make usable on local for dev\r ```\r npm i react react-dom\r npm i rollup rollup-plugin-serve rollup-plugin-livereload @rollup/plugin-node-resolve @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-replace @babel/preset-react --save-dev\r ```",
   "main": "index.js",
   "scripts": {
-    "start": "rollup -c rollup.config.js -w"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c rollup.config.mjs -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rfradella/React-Template.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,18 +19,17 @@
   },
   "homepage": "https://github.com/rfradella/React-Template#readme",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.18.6",
-    "@rollup/plugin-babel": "^6.0.2",
-    "@rollup/plugin-commonjs": "^23.0.2",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-replace": "^5.0.1",
-    "rollup": "^3.3.0",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "rollup": "^4.34.6",
     "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-serve": "^2.0.1"
-  },
-  "type": "module"
+    "rollup-plugin-serve": "^3.0.0"
+  }
 }
