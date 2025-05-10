@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/rfradella/React-Template#readme",
   "dependencies": {
+
     "antd": "^5.23.4",
+
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
