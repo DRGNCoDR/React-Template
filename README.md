@@ -1,3 +1,9 @@
+To make usable on local for dev
+```
+npm i react react-dom
+npm i rollup rollup-plugin-serve rollup-plugin-livereload @rollup/plugin-node-resolve @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-replace @babel/preset-react --save-dev
+```
+
 To set up from scratch
 ```
 npm install rollup --global
@@ -5,7 +11,7 @@ npm init -y
 npm i react react-dom
 npm i rollup rollup-plugin-serve rollup-plugin-livereload @rollup/plugin-node-resolve @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-replace @babel/preset-react --save-dev
 ```
-Create the rollup.config.js file
+Create the rollup.config.mjs file
 ```
 import serve from "rollup-plugin-serve";
 import livereload from "rollup-plugin-livereload";
@@ -66,14 +72,18 @@ Create index.html file
     <script src="../dist/bundle.js"></script>
   </body>
 </html>
-``` 
+```
 ---------------------------------------------------
 create src/index.js
 ```
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-ReactDOM.render(<App />, document.querySelector('#root'));
+
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
+
+root.render(<App />);
 ```
 -----------------------------------------------------
 
@@ -88,13 +98,13 @@ export default App;
 ------------------------------------------------------
 Run the template (in terminal)
 ```
-rollup -c rollup.config.js -w
+rollup -c rollup.config.mjs -w
 ```
 ------------------------------------------------------
 modify package .json
 ```
 "scripts": {
-  "start": "rollup -c rollup.config.js -w"
+  "start": "rollup -c rollup.config.mjs -w"
 },
 ```
 :joy:
