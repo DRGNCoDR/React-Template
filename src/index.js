@@ -6,5 +6,4 @@ import { createRoot } from 'react-dom/client';
 const domNode = document.getElementById('root');
 const root = createRoot(domNode);
 
-<<<<<<< HEAD
 root.render(<App />);
