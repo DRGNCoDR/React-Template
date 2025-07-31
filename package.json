@@ -3,26 +3,32 @@
   "version": "1.0.0",
   "description": "To make usable on local for dev\r ```\r npm i react react-dom\r npm i rollup rollup-plugin-serve rollup-plugin-livereload @rollup/plugin-node-resolve @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-replace @babel/preset-react --save-dev\r ```",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rollup -c rollup.config.mjs -w"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rfradella/React-Template.git"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
+  
   "bugs": {
     "url": "https://github.com/rfradella/React-Template/issues"
   },
+  
   "homepage": "https://github.com/rfradella/React-Template#readme",
   "dependencies": {
     "antd": "^5.23.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
+  
   "devDependencies": {
     "@babel/preset-react": "^7.27.1",
     "@rollup/plugin-babel": "^6.0.4",
